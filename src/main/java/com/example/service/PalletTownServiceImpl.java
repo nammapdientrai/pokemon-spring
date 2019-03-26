@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.entity.PalletTown;
+import com.example.entity.PokeUsers;
 import com.example.repository.PalletTownRepo;
 
 @Service
@@ -17,4 +18,5 @@ public class PalletTownServiceImpl implements IPalletTownService {
 	public List<PalletTown> getListPalletTown() {
 		return ptr.findAll();
 	}
+	
 }
